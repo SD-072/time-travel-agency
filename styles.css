@@ -47,6 +47,15 @@ main {
 	text-align: center;
 }
 
+h3 a {
+	text-decoration: none;
+	color: black;
+}
+
+h3 a:hover {
+	text-decoration: underline;
+}
+
 .gallery-grid {
 	display: grid;
 	/* grid-template-columns: 1fr 1fr 1fr; */
@@ -61,6 +70,9 @@ main {
 	border-radius: 8px;
 }
 
+#contact {
+	margin-top: 20px;
+}
 form {
 	background-color: #fff;
 	padding: 20px;
