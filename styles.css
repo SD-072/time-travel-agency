@@ -20,6 +20,23 @@ footer {
 	padding: 24px;
 }
 
+header > div {
+	position: relative;
+}
+
+.hamburger-toggle {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.hamburger {
+	color: white;
+	font-weight: bold;
+	display: none;
+	cursor: pointer;
+}
+
 nav a {
 	color: white;
 	text-decoration: none;
@@ -104,6 +121,27 @@ button {
 	}
 	.gallery-grid {
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.hamburger {
+		display: block;
+	}
+
+	nav {
+		display: none;
+	}
+
+	.hamburger-toggle:checked ~ nav {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+		gap: 1rem;
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: #123456;
+		border-radius: 3px;
 	}
 }
 
