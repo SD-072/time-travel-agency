@@ -61,6 +61,31 @@ main {
 	border-radius: 8px;
 }
 
+form {
+	background-color: #fff;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+input,
+textarea {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+button {
+	background-color: #10576d;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
 @media (max-width: 600px) {
 	.services-container {
 		flex-direction: column;
